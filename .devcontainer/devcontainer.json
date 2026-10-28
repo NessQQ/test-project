@@ -1,0 +1,20 @@
+{
+    "name": "Development Environment",
+    "image": "ubuntu:latest",
+    "features": {
+        "ghcr.io/devcontainers/features/java:1": {
+            "version": "21",
+            "installMaven": "true",
+            "jdkDistro": "ms"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "vscjava.vscode-java-test"
+            ]
+        }
+    },
+    "overrideCommand": true
+}
